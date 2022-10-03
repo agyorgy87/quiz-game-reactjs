@@ -1,0 +1,74 @@
+[
+    {
+        "questionText": "Hány csont van egy felnőtt emberi testben?",
+        "answerOptions": [
+            { "answerText": "279", "isCorrect": false },
+            { "answerText": "96", "isCorrect": false },
+            { "answerText": "206", "isCorrect": true },
+            { "answerText": "154", "isCorrect": false }
+        ]
+    },
+    {
+        "questionText": "Mi a Naprendszerünk legnagyobb bolygója?",
+        "answerOptions": [
+            { "answerText": "Pluto", "isCorrect": false },
+            { "answerText": "Jupiter", "isCorrect": true },
+            { "answerText": "Vénusz", "isCorrect": false },
+            { "answerText": "Uránusz", "isCorrect": false }
+        ]
+    },
+    {
+        "questionText": "Hány szíve van egy polipnak?",
+        "answerOptions": [
+            { "answerText": "3", "isCorrect": true },
+            { "answerText": "1", "isCorrect": false },
+            { "answerText": "2", "isCorrect": false },
+            { "answerText": "4", "isCorrect": false }
+        ]
+    },
+    {
+        "questionText": "Melyik évben süllyedt el a Titanic?",
+        "answerOptions": [
+            { "answerText": "1935", "isCorrect": false },
+            { "answerText": "1912", "isCorrect": true },
+            { "answerText": "1915", "isCorrect": false },
+            { "answerText": "1902", "isCorrect": false }
+        ]
+    },
+    {
+        "questionText": "Mi az arany kémiai szimbóluma?",
+        "answerOptions": [
+            { "answerText": "Mo", "isCorrect": false },
+            { "answerText": "Re", "isCorrect": false },
+            { "answerText": "Ag", "isCorrect": false },
+            { "answerText": "Au", "isCorrect": true }
+        ]
+    },
+    {
+        "questionText": "Hány fokban látnak a kecskék?",
+        "answerOptions": [
+            { "answerText": "270", "isCorrect": false },
+            { "answerText": "90", "isCorrect": false },
+            { "answerText": "330", "isCorrect": true },
+            { "answerText": "180", "isCorrect": false }
+        ]
+    },
+    {
+        "questionText": "Mikor indult el az első útjára az első dunai gőzhajó, a Carolina?",
+        "answerOptions": [
+            { "answerText": "1910", "isCorrect": false },
+            { "answerText": "1811", "isCorrect": false },
+            { "answerText": "1890", "isCorrect": false },
+            { "answerText": "1820", "isCorrect": true }
+        ]
+    },
+    {
+        "questionText": "Életük hány százalékát töltik a vízben a pingvinek?",
+        "answerOptions": [
+            { "answerText": "75 %", "isCorrect": true },
+            { "answerText": "50 %", "isCorrect": false },
+            { "answerText": "25 %", "isCorrect": false },
+            { "answerText": "40 %", "isCorrect": false }
+        ]
+    }
+]
