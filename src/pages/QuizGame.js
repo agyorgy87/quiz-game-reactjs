@@ -63,7 +63,7 @@ const QuizGame = () => {
             }
       }, [seconds, navigate]);
     
-      const handleAnswerButtonClick = (isCorrect, e) => {
+    const handleAnswerButtonClick = (isCorrect, e) => {
     
         setSeconds(5);
     
@@ -93,8 +93,6 @@ const QuizGame = () => {
             setHoverDisabled('none')
         }
 
-
-    
         resultPage();
     
         setTimeout(() => {
@@ -119,9 +117,9 @@ const QuizGame = () => {
             setColor3("#FFFDFA");
             setColor4("#FFFDFA");	
             }, 5000);
-      }
+    }
     
-      const resultPage = () => {
+    const resultPage = () => {
         if(scores === 0) {
             setFinalText("0 pontot értél el :( Próbáld meg újra!")
         } else if(scores > 0 && scores < 4) {
@@ -131,21 +129,25 @@ const QuizGame = () => {
         } else if(scores > 6) {
             setFinalText("Lenyűgöző! te tényleg mindent tudsz!")
         }
-      }
+    }
 
     return (
         <div className="quiz-page">
             {result ? (
                 <div>
-                    <div>{finalText}</div>
-                        <div>{allQuizData.length}-ból {scores} Pontszámot értél el.</div>
-                        <div>
-                            <button 
-                                onClick={()=> navigate("/")}
-                                >
-                                VISSZA A FŐMENÜBE
-                            </button>
-                        </div>
+                    <div>
+                        {finalText}
+                    </div>
+                    <div>
+                        {allQuizData.length}-ból {scores} Pontszámot értél el.
+                    </div>
+                    <div>
+                        <button 
+                            onClick={()=> navigate("/")}
+                            >
+                            VISSZA A FŐMENÜBE
+                        </button>
+                    </div>
                 </div>	
             ) : (
                 <div className="quiz-game-container">
@@ -159,7 +161,9 @@ const QuizGame = () => {
                     </div>
                         <img src={picturesOfQuiz[currentQuestion].image} alt="" className="quiz-image"/>                  
                     <div className="question-text-container">
-                        <div className="question-text">{allQuizData[currentQuestion].questionText}</div>
+                        <div className="question-text">
+                            {allQuizData[currentQuestion].questionText}
+                        </div>
                     </div>
                 <div className="answer-buttons-container">
                     <button 
@@ -196,10 +200,9 @@ const QuizGame = () => {
                     </button>
                 </div>
             </div>
-            )}
-            
+            )}            
         </div>
-  )
+    )
 }
 
 export default QuizGame
