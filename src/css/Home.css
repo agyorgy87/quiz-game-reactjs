@@ -1,0 +1,8 @@
+.home-container {
+    height: 300px;
+    max-width: 40%;
+    margin: 100px auto;
+    border-radius: 5px;
+    background-color: white;
+}
+

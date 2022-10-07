@@ -1,7 +1,7 @@
 import * as React from "react";
 import {Routes, Route, BrowserRouter } from "react-router-dom";
-import Home from "./components/Home";
-import QuizGame from "./components/QuizGame";
+import Home from "./pages/Home";
+import QuizGame from "./pages/QuizGame";
 
 function Navigation() {
     return (
