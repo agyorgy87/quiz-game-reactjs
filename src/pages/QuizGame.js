@@ -19,23 +19,23 @@ const QuizGame = () => {
   
     const [currentQuestion, setCurrentQuestion] = useState(0);
   
-    const [result, setResult] = useState(false);
+    const [result, setResult] = useState(true);
   
     const [scores, setScores] = useState(0);
   
-    const [seconds, setSeconds] = useState(1);
+    const [seconds, setSeconds] = useState(9999);
   
     const [finalText, setFinalText] = useState("string")
   
     const [textColor,setTextColor] = useState('black');
   
-    const [color1,setColor1 ]= useState('#FFFDFA');
+    const [color1,setColor1 ]= useState('#EFEFEF');
   
-    const [color2,setColor2 ]= useState('#FFFDFA');
+    const [color2,setColor2 ]= useState('#EFEFEF');
   
-    const [color3,setColor3 ]= useState('#FFFDFA');
+    const [color3,setColor3 ]= useState('#EFEFEF');
   
-    const [color4,setColor4 ]= useState('#FFFDFA');
+    const [color4,setColor4 ]= useState('#EFEFEF');
   
     const [hoverDisabled, setHoverDisabled]= useState('visible');
   
@@ -112,10 +112,10 @@ const QuizGame = () => {
             } else {
                 setResult(true);		
             }
-            setColor1("#FFFDFA");
-            setColor2("#FFFDFA");
-            setColor3("#FFFDFA");
-            setColor4("#FFFDFA");	
+            setColor1("#EFEFEF");
+            setColor2("#EFEFEF");
+            setColor3("#EFEFEF");
+            setColor4("#EFEFEF");	
             }, 5000);
     }
     
@@ -134,15 +134,16 @@ const QuizGame = () => {
     return (
         <div className="quiz-page">
             {result ? (
-                <div>
-                    <div>
+                <div className="result-container">
+                    <div className="final-text">
                         {finalText}
                     </div>
-                    <div>
+                    <div className="score-container">
                         {allQuizData.length}-ból {scores} Pontszámot értél el.
                     </div>
-                    <div>
+                    <div className="button-container">
                         <button 
+                            className="backtohome-container"
                             onClick={()=> navigate("/")}
                             >
                             VISSZA A FŐMENÜBE
@@ -205,4 +206,4 @@ const QuizGame = () => {
     )
 }
 
-export default QuizGame
+export default QuizGame;
