@@ -23,8 +23,8 @@
 }
 
 .timeup-icon {
-    font-size: 4rem;
     color: #FFFDFA;
+    font-size: 4rem;
 }
 
 .button-container {
@@ -35,13 +35,13 @@
 }
 
 .timeup-button {
-    width: 10rem;
     height: 5rem;
-    font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    background-color: #FFFDFA;
+    width: 10rem;
     border: none;
     border-radius: 0.5rem;
+    background-color: #FFFDFA;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .timeup-button:hover {

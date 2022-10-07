@@ -23,8 +23,8 @@
 }
 
 .brain-icon {
-    font-size: 4rem;    
     color: #FFFDFA;
+    font-size: 4rem;    
 }
 
 .button-container {
@@ -35,13 +35,13 @@
 }
 
 .start-button {
-    width: 7rem;
     height: 3rem;
-    font-size: 1.5rem;
-    font-family: 'Poppins', sans-serif;
-    background-color: #FFFDFA;
+    width: 7rem;
     border: none;
     border-radius: 0.5rem;
+    background-color: #FFFDFA;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .start-button:hover {
