@@ -13,7 +13,7 @@
     margin: 10rem auto;
     margin-bottom: 2rem;
     text-align: center;
-    color: #EEEEEE;
+    color: #FFFDFA;
     font-size: 4rem;
     font-family: 'Poppins', sans-serif;
 }
@@ -24,7 +24,7 @@
 
 .brain-icon {
     font-size: 4rem;    
-    color: #EEEEEE;
+    color: #FFFDFA;
 }
 
 .button-container {
@@ -39,7 +39,7 @@
     height: 3rem;
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
-    background-color: #EEEEEE;;
+    background-color: #FFFDFA;
     border: none;
     border-radius: 0.5rem;
 }

@@ -11,7 +11,7 @@ const Home = () => {
         <div className="home-container"> 
             <h1 className="quiz-text">Quiz Mester</h1>
                 <div className="brain-icon-container">
-            <GiBrain className="brain-icon"/>
+                    <GiBrain className="brain-icon"/>
                 </div>
                 <div className="button-container">
                     <button
@@ -20,8 +20,7 @@ const Home = () => {
                         >
                         START
                     </button>
-                </div>
-                
+                </div>             
         </div>
     )
 }

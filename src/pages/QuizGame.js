@@ -23,19 +23,19 @@ const QuizGame = () => {
   
     const [scores, setScores] = useState(0);
   
-    const [seconds, setSeconds] = useState(60);
+    const [seconds, setSeconds] = useState(9999);
   
     const [finalText, setFinalText] = useState("string")
   
     const [textColor,setTextColor] = useState('black');
   
-    const [color1,setColor1 ]= useState('#e6e6e6');
+    const [color1,setColor1 ]= useState('#FFFDFA');
   
-    const [color2,setColor2 ]= useState('#e6e6e6');
+    const [color2,setColor2 ]= useState('#FFFDFA');
   
-    const [color3,setColor3 ]= useState('#e6e6e6');
+    const [color3,setColor3 ]= useState('#FFFDFA');
   
-    const [color4,setColor4 ]= useState('#e6e6e6');
+    const [color4,setColor4 ]= useState('#FFFDFA');
   
     const [hoverDisabled, setHoverDisabled]= useState('visible');
   
@@ -68,30 +68,32 @@ const QuizGame = () => {
         setSeconds(5);
     
         if(e.target.id === 'answerOption1' && isCorrect === true){
-            setColor1('green');
+            setColor1('#82d37f');
             setHoverDisabled('none')
         } else if(e.target.id === 'answerOption1' && isCorrect === false){
-            setColor1('red');
+            setColor1('#c84c4c');
             setHoverDisabled('none')
         } else if(e.target.id === 'answerOption2' && isCorrect === true){
-            setColor2('green');
+            setColor2('#82d37f');
             setHoverDisabled('none')
         } else if(e.target.id === "answerOption2" && isCorrect === false){
-            setColor2("red");
+            setColor2("#c84c4c");
             setHoverDisabled('none')
         } else if(e.target.id === "answerOption3" && isCorrect === true){
-            setColor3("green");
+            setColor3("#82d37f");
             setHoverDisabled('none')
         } else if(e.target.id === "answerOption3" && isCorrect === false){
-            setColor3("red");
+            setColor3("#c84c4c");
             setHoverDisabled('none')
         } else if(e.target.id === "answerOption4" && isCorrect === true){
-            setColor4("green");
+            setColor4("#82d37f");
             setHoverDisabled('none')
         } else if(e.target.id === "answerOption4" && isCorrect === false){
-            setColor4("red");
+            setColor4("#c84c4c");
             setHoverDisabled('none')
         }
+
+
     
         resultPage();
     
@@ -112,10 +114,10 @@ const QuizGame = () => {
             } else {
                 setResult(true);		
             }
-            setColor1("#e6e6e6");
-            setColor2("#e6e6e6");
-            setColor3("#e6e6e6");
-            setColor4("#e6e6e6");	
+            setColor1("#FFFDFA");
+            setColor2("#FFFDFA");
+            setColor3("#FFFDFA");
+            setColor4("#FFFDFA");	
             }, 5000);
       }
     
@@ -123,11 +125,11 @@ const QuizGame = () => {
         if(scores === 0) {
             setFinalText("0 pontot értél el :( Próbáld meg újra!")
         } else if(scores > 0 && scores < 4) {
-            setFinalText("Nem rossz, de próbáld meg újra :)")
+            setFinalText("Nem rossz, próbáld meg újra :)")
         } else if(scores > 4 && scores < 6) {
             setFinalText("Gratulálok! Ez szép volt :)")
         } else if(scores > 6) {
-            setFinalText("Lenyűgöző! te tényleg mindent tudsz az állatokról!")
+            setFinalText("Lenyűgöző! te tényleg mindent tudsz!")
         }
       }
 
@@ -147,20 +149,18 @@ const QuizGame = () => {
                 </div>	
             ) : (
                 <div className="quiz-game-container">
-                <div>
-                    <div className="question-count-container">
-                        <span> {currentQuestion + 1}</span>/{allQuizData.length}
+                    <div className="count-counter-container">
+                        <div className="question-count-container">
+                            <span> {currentQuestion + 1}</span>/{allQuizData.length}
+                        </div>
+                        <div className="question-counter-container">
+                            {seconds}
+                        </div>
                     </div>
-                    <div className="question-counter-container">
-                        {seconds}
+                        <img src={picturesOfQuiz[currentQuestion].image} alt="" className="quiz-image"/>                  
+                    <div className="question-text-container">
+                        <div className="question-text">{allQuizData[currentQuestion].questionText}</div>
                     </div>
-                </div>
-                <div className="quiz-image-container">
-                    <img src={picturesOfQuiz[currentQuestion].image} alt="" className="quiz-image"/>
-                </div>
-                <div className="question-text-container">
-                    <div className="question-text">{allQuizData[currentQuestion].questionText}</div>
-                </div>
                 <div className="answer-buttons-container">
                     <button 
                         id="answerOption1" 
