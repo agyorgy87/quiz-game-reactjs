@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-.home-container { 
+.timeup-container {
     min-height: 100%;
     min-width: 100%;
     position: fixed;
@@ -9,7 +9,7 @@
     background-color: #313552;
 }
 
-.quiz-text {
+.timeup-text {
     margin-top: 10rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -18,12 +18,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.brain-icon-container {
+.timeup-icon-container {
     text-align: center;
 }
 
-.brain-icon {
-    font-size: 4rem;    
+.timeup-icon {
+    font-size: 4rem;
     color: #FFFDFA;
 }
 
@@ -34,9 +34,9 @@
     flex-direction: column;  
 }
 
-.start-button {
-    width: 7rem;
-    height: 3rem;
+.timeup-button {
+    width: 10rem;
+    height: 5rem;
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     background-color: #FFFDFA;
@@ -44,7 +44,6 @@
     border-radius: 0.5rem;
 }
 
-.start-button:hover {
+.timeup-button:hover {
     background-color: #EEE6CE;
 }
-

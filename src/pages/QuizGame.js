@@ -23,7 +23,7 @@ const QuizGame = () => {
   
     const [scores, setScores] = useState(0);
   
-    const [seconds, setSeconds] = useState(9999);
+    const [seconds, setSeconds] = useState(1);
   
     const [finalText, setFinalText] = useState("string")
   
@@ -55,7 +55,7 @@ const QuizGame = () => {
             if(seconds > 0) {
                  myTimeout = setTimeout(() => setSeconds(seconds - 1), 1000);			
             }else{
-                 navigate('/timeisup')
+                 navigate('/timeup')
             }
         
             return () => {
