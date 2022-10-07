@@ -19,11 +19,11 @@ const QuizGame = () => {
   
     const [currentQuestion, setCurrentQuestion] = useState(0);
   
-    const [result, setResult] = useState(true);
+    const [result, setResult] = useState(false);
   
     const [scores, setScores] = useState(0);
   
-    const [seconds, setSeconds] = useState(9999);
+    const [seconds, setSeconds] = useState(60);
   
     const [finalText, setFinalText] = useState("string")
   
@@ -143,7 +143,7 @@ const QuizGame = () => {
                     </div>
                     <div className="button-container">
                         <button 
-                            className="backtohome-container"
+                            className="backtohome-button"
                             onClick={()=> navigate("/")}
                             >
                             VISSZA A FŐMENÜBE
