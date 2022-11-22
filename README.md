@@ -1,3 +1,7 @@
+# HOST LINK FOR THE QUIZ APP:
+
+https://quiz-app-20221122.firebaseapp.com/
+
 ## installed packages:
 
 npm install react-router-dom@6
