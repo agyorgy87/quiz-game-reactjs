@@ -27,12 +27,12 @@
         ]
     },
     {
-        "questionText": "Melyik évben süllyedt el a Titanic?",
+        "questionText": "Körülbelül hány órát alszik naponta egy oroszlán?",
         "answerOptions": [
-            { "answerText": "1935", "isCorrect": false },
-            { "answerText": "1912", "isCorrect": true },
-            { "answerText": "1915", "isCorrect": false },
-            { "answerText": "1902", "isCorrect": false }
+            { "answerText": "5", "isCorrect": false },
+            { "answerText": "20", "isCorrect": true },
+            { "answerText": "10", "isCorrect": false },
+            { "answerText": "12", "isCorrect": false }
         ]
     },
     {
@@ -54,12 +54,12 @@
         ]
     },
     {
-        "questionText": "Mikor indult el az első útjára az első dunai gőzhajó, a Carolina?",
+        "questionText": "Milyen színű a pókok vére?",
         "answerOptions": [
-            { "answerText": "1910", "isCorrect": false },
-            { "answerText": "1811", "isCorrect": false },
-            { "answerText": "1890", "isCorrect": false },
-            { "answerText": "1820", "isCorrect": true }
+            { "answerText": "lila", "isCorrect": false },
+            { "answerText": "sárga", "isCorrect": false },
+            { "answerText": "piros", "isCorrect": false },
+            { "answerText": "kék", "isCorrect": true }
         ]
     },
     {
