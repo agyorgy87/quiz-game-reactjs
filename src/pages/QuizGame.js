@@ -2,14 +2,14 @@ import "../css/QuizGame.css";
 import React, {useState, useEffect} from 'react';
 import { useNavigate } from "react-router-dom";
 import quizData from '../quizData.json';
-import carolina from '../img/carolina.jpg';
+import spider from '../img/spider.jpg';
 import goat from '../img/goat.jpg';
 import gold from '../img/gold.jpg';
 import humanbones from '../img/humanbones.jpg';
 import octopus from '../img/octopus.jpg';
 import penguin from '../img/penguin.jpg';
 import solarsystem from '../img/solarsystem.jpg';
-import titanic from '../img/titanic.jpg';
+import lion from '../img/lion.jpg';
 
 const QuizGame = () => {
 
@@ -43,10 +43,10 @@ const QuizGame = () => {
       {image: humanbones},
       {image: solarsystem},
       {image: octopus},
-      {image: titanic},
+      {image: lion},
       {image: gold},
       {image: goat},
-      {image: carolina},
+      {image: spider},
       {image: penguin},
     ]
 
