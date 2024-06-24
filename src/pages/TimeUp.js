@@ -16,7 +16,7 @@ const TimeUp = () => {
                 <div className="button-container">
                     <button 
                         className="timeup-button"
-                        onClick={() => {navigate("/quiz")}}
+                        onClick={() => {navigate("/")}}
                         >PRÓBÁLD ÚJRA</button>    
                 </div>       
                 

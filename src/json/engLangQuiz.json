@@ -1,6 +1,6 @@
 [
     {
-        "questionText": "Hány csont van egy felnőtt emberi testben?",
+        "questionText": "how many bones are in an adult human body?",
         "answerOptions": [
             { "answerText": "279", "isCorrect": false },
             { "answerText": "96", "isCorrect": false },
@@ -9,16 +9,16 @@
         ]
     },
     {
-        "questionText": "Mi a Naprendszerünk legnagyobb bolygója?",
+        "questionText": "What is the largest planet in our solar system?",
         "answerOptions": [
             { "answerText": "Pluto", "isCorrect": false },
             { "answerText": "Jupiter", "isCorrect": true },
-            { "answerText": "Vénusz", "isCorrect": false },
-            { "answerText": "Uránusz", "isCorrect": false }
+            { "answerText": "Venus", "isCorrect": false },
+            { "answerText": "Uranus", "isCorrect": false }
         ]
     },
     {
-        "questionText": "Hány szíve van egy polipnak?",
+        "questionText": "How many hearts does an octopus have?",
         "answerOptions": [
             { "answerText": "3", "isCorrect": true },
             { "answerText": "1", "isCorrect": false },
@@ -27,7 +27,7 @@
         ]
     },
     {
-        "questionText": "Körülbelül hány órát alszik naponta egy oroszlán?",
+        "questionText": "About how many hours a day does a lion sleep?",
         "answerOptions": [
             { "answerText": "5", "isCorrect": false },
             { "answerText": "20", "isCorrect": true },
@@ -36,7 +36,7 @@
         ]
     },
     {
-        "questionText": "Mi az arany kémiai szimbóluma?",
+        "questionText": "What is the chemical formula of gold?",
         "answerOptions": [
             { "answerText": "Mo", "isCorrect": false },
             { "answerText": "Re", "isCorrect": false },
@@ -45,7 +45,7 @@
         ]
     },
     {
-        "questionText": "Hány fokban látnak a kecskék?",
+        "questionText": "How many degrees can the goats see?",
         "answerOptions": [
             { "answerText": "270", "isCorrect": false },
             { "answerText": "90", "isCorrect": false },
@@ -54,16 +54,16 @@
         ]
     },
     {
-        "questionText": "Milyen színű a pókok vére?",
+        "questionText": "What colour is the blood of spiders?",
         "answerOptions": [
-            { "answerText": "lila", "isCorrect": false },
-            { "answerText": "sárga", "isCorrect": false },
-            { "answerText": "piros", "isCorrect": false },
-            { "answerText": "kék", "isCorrect": true }
+            { "answerText": "purple", "isCorrect": false },
+            { "answerText": "yellow", "isCorrect": false },
+            { "answerText": "red", "isCorrect": false },
+            { "answerText": "blue", "isCorrect": true }
         ]
     },
     {
-        "questionText": "Életük hány százalékát töltik a vízben a pingvinek?",
+        "questionText": "What percentage of their lives do penguins spend in water?",
         "answerOptions": [
             { "answerText": "75 %", "isCorrect": true },
             { "answerText": "50 %", "isCorrect": false },

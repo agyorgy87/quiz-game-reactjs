@@ -1,7 +1,8 @@
 import "../css/QuizGame.css";
 import React, {useState, useEffect} from 'react';
-import { useNavigate } from "react-router-dom";
-import quizData from '../quizData.json';
+import { useNavigate, useParams } from "react-router-dom";
+import hunLangQuiz from '../json/hunLangQuiz.json';
+import engLangQuiz from '../json/engLangQuiz.json';
 import spider from '../img/spider.jpg';
 import goat from '../img/goat.jpg';
 import gold from '../img/gold.jpg';
@@ -14,8 +15,16 @@ import lion from '../img/lion.jpg';
 const QuizGame = () => {
 
     let navigate = useNavigate();
+    let { language } = useParams();
 
-    const [allQuizData, setAllQuizData] = useState(quizData)
+    useEffect(() => {
+        if(language === "hun") {
+            setAllQuizData(hunLangQuiz);
+        }
+    }, [language])
+
+
+    const [allQuizData, setAllQuizData] = useState(engLangQuiz);
   
     const [currentQuestion, setCurrentQuestion] = useState(0);
   
@@ -27,7 +36,7 @@ const QuizGame = () => {
   
     const [finalText, setFinalText] = useState("string")
   
-    const [textColor,setTextColor] = useState('black');
+    const [textColor, setTextColor] = useState('black');
   
     const [color1,setColor1 ]= useState('#EFEFEF');
   
@@ -130,6 +139,8 @@ const QuizGame = () => {
             setFinalText("Lenyűgöző! te tényleg mindent tudsz!")
         }
     }
+
+    console.log("language:", language);
 
     return (
         <div className="quiz-page">

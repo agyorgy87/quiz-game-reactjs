@@ -11,7 +11,6 @@
 
 .quiz-text {
     margin-top: 10rem;
-    margin-bottom: 2rem;
     text-align: center;
     color: #FFFDFA;
     font-size: 4rem;
@@ -20,11 +19,32 @@
 
 .brain-icon-container {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .brain-icon {
     color: #FFFDFA;
     font-size: 4rem;    
+}
+
+.language-select-container {
+    display: flex; 
+    justify-content: center;
+}
+
+.language-select-container > div {
+    display: flex;
+    align-items: center;
+}
+
+.english-flag-png, .hungarian-flag-png {
+    width: 50px; 
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.english-lang-container {
+    padding-right: 30px;
 }
 
 .button-container {
