@@ -2,17 +2,17 @@ import '../css/Home.css';
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { GiBrain } from "react-icons/gi";
-import hunFlag from "../img/hun-flag.png";
-import engFlag from "../img/eng-flag.png";
+import huFlag from "../img/hun-flag.png";
+import enFlag from "../img/eng-flag.png"; 
 
 const Home = () => {
 
     let navigate = useNavigate();
-    const [language, setLanguage] = useState("eng");
-    const [buttonLanguage, setButtonLanguage] = useState("START")
+    const [language, setLanguage] = useState("en");
+    const [buttonLanguage, setButtonLanguage] = useState("START");
 
     useEffect(() => {
-        if(language === "hun") {
+        if(language === "hu") {
             setButtonLanguage("INDÍTÁS");
         }else{
             setButtonLanguage("START");
@@ -27,23 +27,23 @@ const Home = () => {
                 </div>         
                 <div className="language-select-container"> 
                     <div className="english-lang-container">
-                        <img src={engFlag} alt="english-flag" className="english-flag-png" />
+                        <img src={enFlag} alt="english-flag" className="english-flag-png" />
                         <label>
                             <input
                             type="radio"
-                            value="eng"
-                            checked={language === "eng"}
+                            value="en"
+                            checked={language === "en"}
                             onChange={(e) => setLanguage(e.target.value)}
                             />
                         </label>
                     </div>
                     <div className="hungarian-lang-container">
-                        <img src={hunFlag} alt="hungarian-flag" className="hungarian-flag-png" />
+                        <img src={huFlag} alt="hungarian-flag" className="hungarian-flag-png" />
                         <label>
                             <input
                             type="radio"
-                            value="hun"
-                            checked={language === "hun"}
+                            value="hu"
+                            checked={language === "hu"}
                             onChange={(e) => setLanguage(e.target.value)}
                             />
                         </label>  

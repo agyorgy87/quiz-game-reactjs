@@ -15,8 +15,10 @@ const QuizGame = () => {
     let { language } = useParams();
 
     useEffect(() => {
-        if(language === "hun") {
+        if(language === "hu") {
             setAllQuizData(hunLangQuiz);
+        }else if(language === "en"){
+            setAllQuizData(engLangQuiz)
         }
     }, [language])
 
@@ -29,8 +31,6 @@ const QuizGame = () => {
     const [scores, setScores] = useState(0);
   
     const [seconds, setSeconds] = useState(60);
-  
-    const [finalText, setFinalText] = useState("string")
 
     useEffect (() => {
         let myTimeout;
@@ -50,7 +50,9 @@ const QuizGame = () => {
         <div className="quiz-page">
             {result ? (
                 <div className="result-container">
-                    <ResultText finalText={finalText} allQuizData={allQuizData} scores={scores}/>
+                    <ResultText 
+                    language={language} allQuizData={allQuizData} scores={scores} result={result}
+                    />
                 </div>	
             ) : (
                 <div className="quiz-game-container">
@@ -66,7 +68,7 @@ const QuizGame = () => {
                     <div>
                         <AnswerOptions 
                         allQuizData={allQuizData} currentQuestion={currentQuestion} setCurrentQuestion={setCurrentQuestion}  
-                        setSeconds={setSeconds} scores={scores} setScores={setScores} setResult={setResult} setFinalText={setFinalText}                                          
+                        setSeconds={setSeconds} scores={scores} setScores={setScores} setResult={setResult}                                                          
                         />
                     </div>
                 </div>

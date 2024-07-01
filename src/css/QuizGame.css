@@ -25,8 +25,7 @@
     flex-direction: column;
 }
 
-.final-text,
-.score-container {
+.final-text{
     text-align: center;
     color: #FFFDFA;
     font-size: 2rem;

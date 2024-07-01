@@ -1,0 +1,23 @@
+
+{
+    "en": {
+        "finalTexts": {
+            "0": "0 point :( Try again!",
+            "1-5": "Not bad, Try again :)",
+            "6-7": "Congratulations! :)",
+            "8": "Perfect! you really know everything!"
+        },
+        "scoreText": "You scored {scores}",
+        "buttonText": "Back to main menu"
+    },
+    "hu": {
+        "finalTexts": {
+            "0": "0 pont :( Próbáld meg újra!",
+            "1-5": "Nem rossz, próbáld meg újra :)",
+            "6-7": "Gratulálok! :)",
+            "8": "Lenyűgöző! te tényleg mindent tudsz!"
+        },
+        "scoreText": "{scores} pontot értél el.",
+        "buttonText": "Vissza a főmenübe"
+    }
+}
