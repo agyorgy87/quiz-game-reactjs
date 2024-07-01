@@ -19,11 +19,8 @@ const TimeUp = () => {
                         onClick={() => {navigate("/")}}
                         >PRÓBÁLD ÚJRA</button>    
                 </div>       
-                
         </div>
-  )
+    )
 }
 
 export default TimeUp;
-
-//
