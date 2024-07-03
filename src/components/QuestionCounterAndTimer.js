@@ -1,14 +1,16 @@
 import React from 'react';
 import "../css/QuestionCounterAndTimer.css";
+import QuestionCounter from './QuestionCounter';
+import QuestionTimer from './QuestionTimer';
 
 const QuestionCounterAndTimer = ({currentQuestion, allQuizData, seconds}) => { 
     return (
-        <div className="count-counter-container">
-            <div className="question-count-container">
-                <span> {currentQuestion + 1}</span>/{allQuizData.length}
+        <div className="counter-and-timer-container"> 
+            <div>
+                <QuestionCounter currentQuestion={currentQuestion} allQuizData={allQuizData}/>
             </div>
-            <div className="question-counter-container">
-                {seconds}
+            <div>
+                <QuestionTimer seconds={seconds}/>
             </div>
         </div>
     ) 
