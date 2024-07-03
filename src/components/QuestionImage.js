@@ -1,5 +1,5 @@
 import React from 'react';
-import "../css/QuizGame.css";
+import "../css/QuestionImage.css";
 import spider from '../img/spider.jpg';
 import goat from '../img/goat.jpg';
 import gold from '../img/gold.jpg';

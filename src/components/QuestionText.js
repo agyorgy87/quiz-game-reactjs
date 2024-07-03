@@ -1,10 +1,10 @@
 import React from 'react';
-import "../css/QuizGame.css";
+import "../css/QuestionText.css";
 
-const QuestionText = ({allQuizData, currentQuestion}) => {
+const QuestionText = ({allQuizData, currentQuestion}) => { 
     return (
-        <div className="question-text">
-            {allQuizData[currentQuestion].questionText}
+        <div className="question-text-container">
+            <p>{allQuizData[currentQuestion].questionText}</p>
         </div> 
     )
 }

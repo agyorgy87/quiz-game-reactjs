@@ -1,7 +1,7 @@
 import React from 'react';
-import "../css/QuizGame.css";
+import "../css/QuestionCounterAndTimer.css";
 
-const QuestionCounterAndTimer = ({currentQuestion, allQuizData, seconds}) => {
+const QuestionCounterAndTimer = ({currentQuestion, allQuizData, seconds}) => { 
     return (
         <div className="count-counter-container">
             <div className="question-count-container">

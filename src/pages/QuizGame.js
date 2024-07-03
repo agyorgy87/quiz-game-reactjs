@@ -49,7 +49,7 @@ const QuizGame = () => {
     return (
         <div className="quiz-page">
             {result ? (
-                <div className="result-container">
+                <div className="result-container"> 
                     <ResultText 
                     language={language} allQuizData={allQuizData} scores={scores} result={result}
                     />
@@ -62,7 +62,7 @@ const QuizGame = () => {
                     <div>
                         <QuestionImage currentQuestion={currentQuestion}/>  
                     </div>          
-                    <div className="question-text-container">
+                    <div>
                         <QuestionText allQuizData={allQuizData} currentQuestion={currentQuestion}/>
                     </div>
                     <div>

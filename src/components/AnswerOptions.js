@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import "../css/QuizGame.css";
+import "../css/AnswerOptions.css";
 
 const AnswerOptions = ({allQuizData, currentQuestion, setSeconds, scores, setScores, setResult, setCurrentQuestion}) => {
 

@@ -1,0 +1,10 @@
+.count-counter-container {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-count-container,
+.question-counter-container {
+    font-family: 'Poppins', sans-serif;
+}
