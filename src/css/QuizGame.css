@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-*,
-*:before,
-*:after { 
+* {  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,15 +23,11 @@
     flex-direction: column;
 }
 
-
 .quiz-game-container {
-    max-width: 700px;   
-    border: 1px solid black;
-    border-radius: 1rem;
+    width: 500px;   
+    border-radius: 1.5rem;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     background-color: #FFFDFA;
 }
-
-
