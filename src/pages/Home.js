@@ -11,44 +11,30 @@ const Home = () => {
     const [language, setLanguage] = useState("en");
     const [buttonLanguage, setButtonLanguage] = useState("START");
 
-    useEffect(() => {
-        if(language === "hu") {
+
+    const handleLanguageChange = (lang) => {
+        setLanguage(lang);
+        if(lang === "hu") {
             setButtonLanguage("INDÍTÁS");
-        }else{
+        } else {
             setButtonLanguage("START");
         }
-    }, [language])
+    }
 
     return (
         <div className="home-container"> 
             <h1 className="quiz-text">Quiz</h1>
                 <div className="brain-icon-container">
                     <GiBrain className="brain-icon"/>
-                </div>         
+                </div> 
                 <div className="language-select-container"> 
-                    <div className="english-lang-container">
+                    <div className="english-lang-container" onClick={() => handleLanguageChange("en")}>
                         <img src={enFlag} alt="english-flag" className="english-flag-png" />
-                        <label>
-                            <input
-                            type="radio"
-                            value="en"
-                            checked={language === "en"}
-                            onChange={(e) => setLanguage(e.target.value)}
-                            />
-                        </label>
                     </div>
-                    <div className="hungarian-lang-container">
+                    <div className="hungarian-lang-container" onClick={() => handleLanguageChange("hu")}>
                         <img src={huFlag} alt="hungarian-flag" className="hungarian-flag-png" />
-                        <label>
-                            <input
-                            type="radio"
-                            value="hu"
-                            checked={language === "hu"}
-                            onChange={(e) => setLanguage(e.target.value)}
-                            />
-                        </label>  
-                    </div>                                 
-                </div>              
+                    </div>                                
+                </div>
                 <div className="button-container">
                     <button
                         className="start-button"
