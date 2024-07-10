@@ -6,7 +6,7 @@ import QuestionTimer from './QuestionTimer';
 const QuestionCounterAndTimer = ({currentQuestion, allQuizData, seconds}) => { 
     return (
         <div className="counter-and-timer-container"> 
-            <div>
+            <div> 
                 <QuestionCounter currentQuestion={currentQuestion} allQuizData={allQuizData}/>
             </div>
             <div>

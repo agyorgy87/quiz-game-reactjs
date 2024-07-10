@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-.quiz-page {
+.quiz-page { 
     min-height: 100%;
     min-width: 100%;
     display: flex;
@@ -24,9 +24,9 @@
 }
 
 .quiz-game-container {
-    width: 500px;   
-    border-radius: 1.5rem;
-    padding: 1.5rem;
+    width: 500px; 
+    border-radius: 1rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     background-color: #FFFDFA;

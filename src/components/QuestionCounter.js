@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "../css/QuestionCounterAndTimer.css";
 
 const QuestionCounter = ({currentQuestion, allQuizData}) => {
   return (

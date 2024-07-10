@@ -1,10 +1,11 @@
-.counter-and-timer-container {
-    margin-bottom: 1rem;
+.counter-and-timer-container {  
+    margin: 0rem 0.3rem 0.3rem;
     display: flex;
     justify-content: space-between;
 }
 
 .question-counter-container,
 .question-timer-container {
+    font-size: 1rem; 
     font-family: 'Poppins', sans-serif;
 }
