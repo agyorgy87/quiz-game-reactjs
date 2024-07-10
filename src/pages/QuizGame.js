@@ -26,7 +26,7 @@ const QuizGame = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [result, setResult] = useState(false);
     const [scores, setScores] = useState(0);
-    const [seconds, setSeconds] = useState(10000000);
+    const [seconds, setSeconds] = useState(60);
 
     useEffect (() => {
         let myTimeout;
@@ -41,7 +41,7 @@ const QuizGame = () => {
             }
     }, [seconds, navigate]);
     
-    return ( 
+    return (  
         <div className="quiz-page">
             {result ? (
                 <div className="result-container"> 
