@@ -9,7 +9,7 @@ import penguin from '../img/penguin.jpg';
 import solarsystem from '../img/solarsystem.jpg';
 import lion from '../img/lion.jpg';
 
-const QuestionImage = ({currentQuestion}) => {
+const QuestionImage = ({currentQuestion}) => { 
 
     const picturesOfQuiz = [
         {image: humanbones},
@@ -24,7 +24,7 @@ const QuestionImage = ({currentQuestion}) => {
 
     return ( 
         <div>
-            <img src={picturesOfQuiz[currentQuestion].image} alt="" className="quiz-image"/>    
+            <img src={picturesOfQuiz[currentQuestion].image} alt="image-for-the-question" className="quiz-image"/>    
         </div>
     )
 }

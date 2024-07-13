@@ -11,8 +11,9 @@
     border-radius: 0.5rem;
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 
 .button-style:hover {
-    background-color: #EEE6CE !important;
+    background-color: #EEE6CE !important; 
 }

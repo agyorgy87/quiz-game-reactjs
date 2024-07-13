@@ -10,7 +10,7 @@ function Navigation() {
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="quiz/:language" element={<QuizGame/>} />
-            <Route path="timeup" element={<TimeUp/>} />
+            <Route path="timeup/:language" element={<TimeUp/>} />
         </Routes>
     </BrowserRouter>
   );

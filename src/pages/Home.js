@@ -1,5 +1,5 @@
 import '../css/Home.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { GiBrain } from "react-icons/gi";
 import huFlag from "../img/hun-flag.png";

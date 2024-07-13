@@ -1,13 +1,18 @@
-.final-text{
+.score-text, .performance-text {
+    margin-bottom: 2rem;
     text-align: center;
     color: #FFFDFA;
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
 }
 
+.back-to-home-button-container {
+    display: flex;
+    justify-content: center;
+}
+
 .back-to-home-button {
-    height: 5rem;
-    width: 10rem;
+    padding: 15px;
     border: none;
     border-radius: 0.5rem;
     background-color: #FFFDFA;

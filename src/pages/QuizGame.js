@@ -26,23 +26,23 @@ const QuizGame = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [result, setResult] = useState(false);
     const [scores, setScores] = useState(0);
-    const [seconds, setSeconds] = useState(60);
+    const [seconds, setSeconds] = useState(60); 
 
     useEffect (() => {
         let myTimeout;
             if(seconds > 0) {
-                 myTimeout = setTimeout(() => setSeconds(seconds - 1), 1000);			
+                myTimeout = setTimeout(() => setSeconds(seconds - 1), 1000);			 
             }else{
-                 navigate('/timeup')
+                navigate(`/timeup/${language}`)
             }
         
             return () => {
-                    clearTimeout(myTimeout);			
+                clearTimeout(myTimeout);			
             }
     }, [seconds, navigate]);
     
     return (  
-        <div className="quiz-page">
+        <div className={`quiz-page ${result ? "mobile-view" : ""}`}>
             {result ? (
                 <div className="result-container"> 
                     <ResultText 

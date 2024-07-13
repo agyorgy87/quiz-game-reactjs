@@ -56,21 +56,17 @@
 }
 
 .start-button {
-    height: 4rem;
-    width: 10rem;
+    padding: 12px;
     border: none;
     border-radius: 0.5rem;
     background-color: #FFFDFA;
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 
 .start-button:hover {
     background-color: #EEE6CE;
 }
 
-/*
-@media (max-width: 600px) {
 
-}
-*/

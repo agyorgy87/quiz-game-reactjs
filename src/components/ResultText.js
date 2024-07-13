@@ -12,11 +12,11 @@ const ResultText = ({language, scores, result}) => {
 
     useEffect(() => {
         if(result === true) {
-            resultAnnouncement();
+            resultBoardMessage();
         }
     },[result])
 
-    const resultAnnouncement = () => {
+    const resultBoardMessage = () => {
         const langData = internationalLanguage[language]
         if(langData) {
             if (scores === 0) {
@@ -31,23 +31,22 @@ const ResultText = ({language, scores, result}) => {
         }
     };
 
-
     return (
-        <div className="final-text">
-            <div>
-                {finalText}
+        <div>
+            <div> 
+                <p className="score-text">{internationalLanguage[language].scoreText.replace("{scores}",scores)}</p>
             </div>
             <div>
-                {internationalLanguage[language].scoreText.replace("{scores}",scores)}
+                <p className="performance-text">{finalText}</p>
             </div>              
-                <div>
-                    <button 
-                    className="back-to-home-button"
-                    onClick={()=> navigate("/")}
-                    >
-                    {internationalLanguage[language].buttonText}
-                    </button>
-                </div>
+            <div className="back-to-home-button-container">
+                <button 
+                className="back-to-home-button"
+                onClick={()=> navigate("/")}
+                >
+                {internationalLanguage[language].scoreButtonText} 
+                </button>
+            </div>
         </div>
     )
 }

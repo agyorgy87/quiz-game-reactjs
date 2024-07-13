@@ -8,7 +8,9 @@
             "8": "Perfect! you really know everything!"
         },
         "scoreText": "You scored {scores}",
-        "buttonText": "Back to main menu"
+        "scoreButtonText": "Back to main menu",
+        "timeUpText": "Time up",
+        "timeUpButtonText": "Try again"
     },
     "hu": {
         "finalTexts": {
@@ -18,6 +20,8 @@
             "8": "Lenyűgöző! te tényleg mindent tudsz!"
         },
         "scoreText": "{scores} pontot értél el.",
-        "buttonText": "Vissza a főmenübe"
+        "scoreButtonText": "Vissza a Főmenübe",
+        "timeUpText": "Lejárt az időd",
+        "timeUpButtonText": "Újra megpróbálom"
     }
 }

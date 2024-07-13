@@ -3,7 +3,7 @@ import "../css/AnswerOptions.css";
 
 const AnswerOptions = ({allQuizData, currentQuestion, setSeconds, scores, setScores, setResult, setCurrentQuestion}) => {
 
-    const [color1,setColor1 ]= useState('#EFEFEF');
+    const [color1,setColor1 ]= useState('#EFEFEF'); 
   
     const [color2,setColor2 ]= useState('#EFEFEF');
   
@@ -59,12 +59,13 @@ const AnswerOptions = ({allQuizData, currentQuestion, setSeconds, scores, setSco
             if(nextQuestion < allQuizData.length) {
                 setCurrentQuestion(nextQuestion);
             } else {
-                setResult(true);		
+                setResult(true);
+                setSeconds(Infinity);		
             }
             setColor1("#EFEFEF");
             setColor2("#EFEFEF");
             setColor3("#EFEFEF");
-            setColor4("#EFEFEF");	
+            setColor4("#EFEFEF");	 
             }, 5000);
     }
 

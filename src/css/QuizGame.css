@@ -25,6 +25,7 @@
 
 .quiz-game-container { 
     width: 500px; 
+    max-width: 100%;
     border-radius: 1rem;
     padding: 1.2rem;
     display: flex;
@@ -32,13 +33,18 @@
     background-color: #FFFDFA;
 }
 
-
 @media (max-width: 600px) {
+    .quiz-game-container {
+        width: 100%;
+    }
 
     .quiz-page { 
         background-color: #FFFDFA;
     }
 
+    .mobile-view {
+        background-color: #313552 !important;
+    }
 }
 
 
