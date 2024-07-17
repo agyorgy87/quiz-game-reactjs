@@ -42,7 +42,7 @@ const QuizGame = () => {
     }, [seconds, navigate]);
     
     return (  
-        <div className={`quiz-page ${result ? "mobile-view" : ""}`}>
+        <div className={`quiz-page ${result ? "mobile-view" : ""}`}> 
             {result ? (
                 <div className="result-container"> 
                     <ResultText 

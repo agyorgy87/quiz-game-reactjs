@@ -6,7 +6,7 @@ import TimeUp from "./pages/TimeUp";
 
 function Navigation() {
     return (
-    <BrowserRouter>
+    <BrowserRouter basename="/quiz-game-reactjs">
         <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="quiz/:language" element={<QuizGame/>} />
