@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/quizgame-reactjs/static/css/main.c0206787.css",
+    "main.js": "/quizgame-reactjs/static/js/main.334007db.js",
+    "static/js/787.e9c9c00e.chunk.js": "/quizgame-reactjs/static/js/787.e9c9c00e.chunk.js",
+    "static/media/penguin.jpg": "/quizgame-reactjs/static/media/penguin.407784b7d8650379e292.jpg",
+    "static/media/gold.jpg": "/quizgame-reactjs/static/media/gold.10420ed38ee0f6b8126b.jpg",
+    "static/media/solarsystem.jpg": "/quizgame-reactjs/static/media/solarsystem.683b7fe34bd8b6086a28.jpg",
+    "static/media/goat.jpg": "/quizgame-reactjs/static/media/goat.57e4a65afb256e41ce4d.jpg",
+    "static/media/lion.jpg": "/quizgame-reactjs/static/media/lion.892bb9f1816ad845990e.jpg",
+    "static/media/octopus.jpg": "/quizgame-reactjs/static/media/octopus.99fbb22c6632f80b0320.jpg",
+    "static/media/spider.jpg": "/quizgame-reactjs/static/media/spider.e6f7b8ae4441811b135b.jpg",
+    "static/media/humanbones.jpg": "/quizgame-reactjs/static/media/humanbones.5435e28e1c9d5f9284a7.jpg",
+    "static/media/hun-flag.png": "/quizgame-reactjs/static/media/hun-flag.5a53bbc68e10ad98cbf5.png",
+    "static/media/eng-flag.png": "/quizgame-reactjs/static/media/eng-flag.d629e0e05d763ab2b698.png",
+    "index.html": "/quizgame-reactjs/index.html",
+    "main.c0206787.css.map": "/quizgame-reactjs/static/css/main.c0206787.css.map",
+    "main.334007db.js.map": "/quizgame-reactjs/static/js/main.334007db.js.map",
+    "787.e9c9c00e.chunk.js.map": "/quizgame-reactjs/static/js/787.e9c9c00e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0206787.css",
+    "static/js/main.334007db.js"
+  ]
+}
