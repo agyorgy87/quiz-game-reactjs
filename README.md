@@ -1,6 +1,6 @@
 # HOST LINK FOR THE QUIZ APP:
 
-https://quiz-app-20221122.firebaseapp.com/
+https://agyorgy87.github.io/quiz-game-reactjs
 
 ## installed packages:
 
