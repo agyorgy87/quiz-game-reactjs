@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/quiz-game-reactjs/static/css/main.c0206787.css",
-    "main.js": "/quiz-game-reactjs/static/js/main.4b057bb0.js",
+    "main.js": "/quiz-game-reactjs/static/js/main.83bf6e21.js",
     "static/js/787.e9c9c00e.chunk.js": "/quiz-game-reactjs/static/js/787.e9c9c00e.chunk.js",
     "static/media/penguin.jpg": "/quiz-game-reactjs/static/media/penguin.407784b7d8650379e292.jpg",
     "static/media/gold.jpg": "/quiz-game-reactjs/static/media/gold.10420ed38ee0f6b8126b.jpg",
@@ -15,11 +15,11 @@
     "static/media/eng-flag.png": "/quiz-game-reactjs/static/media/eng-flag.d629e0e05d763ab2b698.png",
     "index.html": "/quiz-game-reactjs/index.html",
     "main.c0206787.css.map": "/quiz-game-reactjs/static/css/main.c0206787.css.map",
-    "main.4b057bb0.js.map": "/quiz-game-reactjs/static/js/main.4b057bb0.js.map",
+    "main.83bf6e21.js.map": "/quiz-game-reactjs/static/js/main.83bf6e21.js.map",
     "787.e9c9c00e.chunk.js.map": "/quiz-game-reactjs/static/js/787.e9c9c00e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c0206787.css",
-    "static/js/main.4b057bb0.js"
+    "static/js/main.83bf6e21.js"
   ]
 }
