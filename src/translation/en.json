@@ -1,0 +1,13 @@
+{
+    "startButton": "START",
+    "finalTexts": {
+        "0": "0 point :( Try again!",
+        "1-5": "Not bad, Try again :)",
+        "6-7": "Congratulations! :)",
+        "8": "Perfect! you really know everything!"
+    },
+    "scoreText": "You scored {scores}",
+    "scoreButtonText": "Back to main menu",
+    "timeUpText": "Time up",
+    "timeUpButtonText": "Try again"
+}

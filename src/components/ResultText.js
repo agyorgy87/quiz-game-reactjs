@@ -1,24 +1,36 @@
 import { useState, useEffect } from 'react';
 import "../css/ResultText.css";
 import { useNavigate } from "react-router-dom";
-import internationalLanguage from '../json/internationalLanguage.json';
+import en_lang from "../translation/en.json";
+import hu_lang from "../translation/hu.json";
 
 
-const ResultText = ({language, scores, result}) => {
+const ResultText = ({ language, scores, result }) => {
+    const [finalText, setFinalText] = useState("");
+    const [langData, setLangData] = useState(en_lang);
 
-    const [finalText, setFinalText] = useState("")
-
-    let navigate = useNavigate(); 
+    let navigate = useNavigate();
 
     useEffect(() => {
-        if(result === true) {
+        switch (language) {
+            case "hu":
+                setLangData(hu_lang);
+                break;
+            case "en":
+            default:
+                setLangData(en_lang);
+                break;
+        }
+    }, [language]);
+
+    useEffect(() => {
+        if (result === true) {
             resultBoardMessage();
         }
-    },[result])
+    }, [result, langData]);
 
     const resultBoardMessage = () => {
-        const langData = internationalLanguage[language]
-        if(langData) {
+        if (langData) {
             if (scores === 0) {
                 setFinalText(langData.finalTexts["0"]);
             } else if (scores > 0 && scores <= 5) {
@@ -34,21 +46,21 @@ const ResultText = ({language, scores, result}) => {
     return (
         <div>
             <div> 
-                <p className="score-text">{internationalLanguage[language].scoreText.replace("{scores}",scores)}</p>
+                <p className="score-text">{langData.scoreText.replace("{scores}", scores)}</p>
             </div>
             <div>
                 <p className="performance-text">{finalText}</p>
             </div>              
             <div className="back-to-home-button-container">
                 <button 
-                className="back-to-home-button"
-                onClick={()=> navigate("/")}
+                    className="back-to-home-button"
+                    onClick={() => navigate("/")}
                 >
-                {internationalLanguage[language].scoreButtonText} 
+                    {langData.scoreButtonText}
                 </button>
             </div>
         </div>
-    )
+    );
 }
 
 export default ResultText;

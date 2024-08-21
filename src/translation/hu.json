@@ -1,0 +1,13 @@
+{
+    "startButton": "INDÍTÁS",
+    "finalTexts": {
+        "0": "0 pont :( Próbáld meg újra!",
+        "1-5": "Nem rossz, próbáld meg újra :)",
+        "6-7": "Gratulálok! :)",
+        "8": "Lenyűgöző! te tényleg mindent tudsz!"
+        },
+    "scoreText": "{scores} pontot értél el.",
+    "scoreButtonText": "Vissza a Főmenübe",
+    "timeUpText": "Lejárt az időd",
+    "timeUpButtonText": "Újra megpróbálom"
+}
